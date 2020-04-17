@@ -1,9 +1,9 @@
-// class Avenger {
-//   constructor(name) {
-//       this.name = name;
-//   }
-// }
+class Avenger {
+  constructor(name) {
+    this.name = name;
+  }
+}
 
-// const hero = new Avenger("Steve Rogers");
+const hero = new Avenger("Steve Rogers");
 
-// hero.name; /*?*/
+hero.name; /*?*/
