@@ -1,0 +1,10 @@
+{
+  "name": "types",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/ramda": "^0.27.0",
+    "ramda": "^0.27.0"
+  }
+}
