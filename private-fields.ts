@@ -1,11 +1,11 @@
 class Avenger {
-  name: string;
+  #name: string
 
   constructor(name: string) {
-    this.name = name;
+      this.#name = name;
   }
 }
 
 const hero = new Avenger("Steve Rogers");
 
-hero.name;
+hero.#name;
