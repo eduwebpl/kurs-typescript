@@ -1,5 +1,5 @@
 {
-  "name": "06_tsc_compiler",
+  "name": "08_tsconfig",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
