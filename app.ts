@@ -18,3 +18,6 @@ const ticks: string = `${double} ticks` /*?*/
 let coupon: "holiday20"
 console.log(coupon)
 coupon = "summer10"
+
+// Boolean
+const isLogged: boolean = true
