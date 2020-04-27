@@ -1,2 +1,0 @@
-# kurs-typescript
-Typescript
