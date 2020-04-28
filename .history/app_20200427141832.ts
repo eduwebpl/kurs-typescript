@@ -1,0 +1,1 @@
+const numberForSure = 10;
