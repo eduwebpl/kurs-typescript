@@ -1,24 +1,24 @@
-// Parameter types
-type Song = { title: string; duration: number; genre: string }
-const song = { title: "Eye of the tiger", duration: 213, genre: "rock" }
+let numberToText: (num: number) => string
 
-function play(song: Song) {
-  return `Playing now: ${song}`
+numberToText = (num) => num.toString()
+numberToText(5) /*?*/
+
+type Song = { id: number; title: string; duration: number; genre: string }
+const songs: Song[] = [
+  { id: 1, title: "Eye of the tiger", duration: 246, genre: "rock" },
+  { id: 2, title: "Carry On Wayward Son", duration: 283, genre: "rock" },
+]
+
+type updateSong = (id: number, data: Song) => Song | Boolean
+
+const update: updateSong = (songId, data) => {
+  const index = songs.findIndex(({ id }) => id === songId)
+  if (index > -1) {
+    return (songs[index] = data)
+  }
+
+  return false
 }
 
-play(song) /*?*/
-
-// Optional parameters
-function addToPlaylist(song, playlist?: string) {
-  if (!playlist) playlist = "Default"
-  return `Added ${song.title} to playlist: ${playlist}`
-}
-
-addToPlaylist(song) /*?*/
-
-// Default parameters
-function addToPlaylist(song, playlist = "Default") {
-  return `Added ${song.title} to playlist: ${playlist}`
-}
-
-addToPlaylist(song) /*?*/
+update(2, { id: 2, title: "Eyes", duration: 10, genre: "rock" }) /*?*/
+songs /*?*/
