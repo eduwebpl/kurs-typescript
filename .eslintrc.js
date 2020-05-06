@@ -19,10 +19,8 @@ module.exports = {
     "no-prototype-builtins": "off",
     "import/prefer-default-export": "off",
     "import/no-default-export": "error",
-    "@typescript-eslint/explicit-function-return-type": [
-      "error",
-      { allowExpressions: true, allowTypedFunctionExpressions: true },
-    ],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/no-use-before-define": [
       "error",
       { functions: false, classes: true, variables: true, typedefs: true },
