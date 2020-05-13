@@ -1,4 +1,4 @@
-class Media {
+abstract class Media {
   public progress = 0
 
   constructor(
@@ -11,11 +11,20 @@ class Media {
   play() {
     this.progress += 1
   }
+
+  abstract like(media_id: number, user_id: number): boolean
 }
+
+const media = new Media("Syntax.fm", "podcast", "Web dev podcast", 0)
+media.type /*?*/
 
 class Movie extends Media {
   constructor(name: string, genre: string, duration: number) {
     super(name, "movie", genre, duration)
+  }
+
+  like(media_id: number, user_id: number) {
+    return true
   }
 }
 
